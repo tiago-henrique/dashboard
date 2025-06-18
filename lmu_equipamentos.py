@@ -90,7 +90,7 @@ col2.plotly_chart(fig_lab, use_container_width=True)
 
 #controle de temperatura
 
-df_t = pd.read_csv('temperatura.csv')
+df_t = pd.read_csv('https://lmu.famerp.br/dash/lmu/temperatura.csv')
 df_ta = df_t[df_t['selecao'] == 1] 
 
 df_ta_new = df_ta[['selecao', 'ambiente', 'temperatura_atual', 'temperatura_maxima', 'temperatura_minima', 'umidade', 'data']]
