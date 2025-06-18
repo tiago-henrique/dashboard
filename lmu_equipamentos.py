@@ -8,7 +8,8 @@ col1, col2 = st.columns(2)
 col3, col4 = st.columns(2)
 col5, col6, col7 = st.columns(3)
 
-df = pd.read_csv('gerenciamento.csv')
+url = ("https://lmu.famerp.br/dash/lmu/indicadores.csv")
+df = pd.read_csv(url)
 
 df_new = df[['equipamento', 'laboratorio', 'data']]
 
